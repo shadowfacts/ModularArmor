@@ -1,0 +1,9 @@
+item.modulararmor:helmet.name=Modular Helmet
+item.modulararmor:chestplate.name=Modular Chestplate
+item.modulararmor:leggings.name=Modular Leggings
+item.modulararmor:boots.name=Modular Boots
+
+item.modulararmor:battery.name=Battery Module
+item.modulararmor:solar_panel.name=Solar Panel Module
+item.modulararmor:wireless_charger.name=Wireless Charger Module
+item.modulararmor:armor_plating.name=Armor Plating Module

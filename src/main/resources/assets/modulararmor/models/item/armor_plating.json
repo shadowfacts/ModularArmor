@@ -1,0 +1,6 @@
+{
+	"parent": "modulararmor:item/module",
+	"textures": {
+		"layer1": "modulararmor:items/armor_plating"
+	}
+}

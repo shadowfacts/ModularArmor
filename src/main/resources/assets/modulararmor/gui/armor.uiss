@@ -1,0 +1,14 @@
+@include modulararmor:base
+
+#armor {
+	vertical-layout: top
+	horizontal-layout: center
+	margin-top: 5
+}
+
+#inventory {
+	vertical-layout: center
+	horizontal-layout: left
+	margin-left: 7
+	margin-bottom: 11
+}
