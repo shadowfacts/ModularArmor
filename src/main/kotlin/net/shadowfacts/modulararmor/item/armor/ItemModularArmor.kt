@@ -49,7 +49,7 @@ abstract class ItemModularArmor(name: String, slot: EntityEquipmentSlot): ItemAr
 	override fun addInformation(stack: ItemStack, player: EntityPlayer, tooltip: MutableList<String>, advanced: Boolean) {
 		stack.getCapability(MODULE_PROVIDER, null)!!.inventory.forEach {
 			if (!it.isEmpty) {
-				tooltip.add(I18n.format(it.unlocalizedName + ".name"))
+				tooltip.add(I18n.format(it.unlocalizedName + ".module"))
 				val temp = mutableListOf<String>()
 				it.getCapability(MODULE, null)!!.addTooltip(it, temp)
 				temp.forEach {

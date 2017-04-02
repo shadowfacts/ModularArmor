@@ -4,6 +4,12 @@ item.modulararmor:leggings.name=Modular Leggings
 item.modulararmor:boots.name=Modular Boots
 
 item.modulararmor:battery.name=Battery Module
+item.modulararmor:battery.module=Battery
 item.modulararmor:solar_panel.name=Solar Panel Module
+item.modulararmor:solar_panel.module=Solar Panel
 item.modulararmor:wireless_charger.name=Wireless Charger Module
+item.modulararmor:wireless_charger.module=Wireless Charger
 item.modulararmor:armor_plating.name=Armor Plating Module
+item.modulararmor:armor_plating.module=Armor Plating
+item.modulararmor:energized_plating.name=Energized Plating Module
+item.modulararmor:energized_plating.module=Energized Plating

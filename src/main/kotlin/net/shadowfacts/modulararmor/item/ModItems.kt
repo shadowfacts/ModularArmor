@@ -4,10 +4,7 @@ import net.shadowfacts.modulararmor.item.armor.ArmorBoots
 import net.shadowfacts.modulararmor.item.armor.ArmorChestplate
 import net.shadowfacts.modulararmor.item.armor.ArmorHelmet
 import net.shadowfacts.modulararmor.item.armor.ArmorLeggings
-import net.shadowfacts.modulararmor.item.module.ModuleArmorPlating
-import net.shadowfacts.modulararmor.item.module.ModuleBattery
-import net.shadowfacts.modulararmor.item.module.ModuleSolarPanel
-import net.shadowfacts.modulararmor.item.module.ModuleWirelessCharger
+import net.shadowfacts.modulararmor.item.module.*
 import net.shadowfacts.shadowmc.item.ModItems
 
 /**
@@ -26,6 +23,7 @@ object ModItems: ModItems() {
 	val solarPanel = ModuleSolarPanel()
 	val wirelessCharger = ModuleWirelessCharger()
 	val armorPlating = ModuleArmorPlating()
+	val energizedPlating = ModuleEnergizedPlating()
 
 	override fun init() {
 //		Armors
@@ -39,6 +37,7 @@ object ModItems: ModItems() {
 		register(solarPanel)
 		register(wirelessCharger)
 		register(armorPlating)
+		register(energizedPlating)
 	}
 
 }
