@@ -20,6 +20,8 @@ object ModItems: ModItems() {
 
 //	Modules
 	val battery = ModuleBattery()
+	val mediumBattery = ModuleMediumBattery()
+	val largeBattery = ModuleLargeBattery()
 	val solarPanel = ModuleSolarPanel()
 	val wirelessCharger = ModuleWirelessCharger()
 	val armorPlating = ModuleArmorPlating()
@@ -36,6 +38,8 @@ object ModItems: ModItems() {
 
 //		Modules
 		register(battery)
+		register(mediumBattery)
+		register(largeBattery)
 		register(solarPanel)
 		register(wirelessCharger)
 		register(armorPlating)

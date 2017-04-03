@@ -5,6 +5,10 @@ item.modulararmor:boots.name=Modular Boots
 
 item.modulararmor:battery.name=Battery Module
 item.modulararmor:battery.module=Battery
+item.modulararmor:medium_battery.name=Medium Battery Module
+item.modulararmor:medium_battery.module=Medium Battery
+item.modulararmor:large_battery.name=Large Battery Module
+item.modulararmor:large_battery.module=Large Battery
 item.modulararmor:solar_panel.name=Solar Panel Module
 item.modulararmor:solar_panel.module=Solar Panel
 item.modulararmor:wireless_charger.name=Wireless Charger Module
