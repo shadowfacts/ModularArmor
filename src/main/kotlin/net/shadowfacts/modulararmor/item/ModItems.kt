@@ -25,6 +25,7 @@ object ModItems: ModItems() {
 	val armorPlating = ModuleArmorPlating()
 	val energizedPlating = ModuleEnergizedPlating()
 	val highJump = ModuleHighJump()
+	val longFall = ModuleLongFall()
 
 	override fun init() {
 //		Armors
@@ -40,6 +41,7 @@ object ModItems: ModItems() {
 		register(armorPlating)
 		register(energizedPlating)
 		register(highJump)
+		register(longFall)
 	}
 
 }
