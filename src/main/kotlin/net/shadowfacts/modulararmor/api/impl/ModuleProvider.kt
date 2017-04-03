@@ -11,7 +11,6 @@ import net.shadowfacts.forgelin.extensions.forEach
 import net.shadowfacts.forgelin.extensions.set
 import net.shadowfacts.modulararmor.ModCapabilities.MODULE
 import net.shadowfacts.modulararmor.api.IModuleProvider
-import net.shadowfacts.modulararmor.util.containsItem
 
 /**
  * @author shadowfacts
@@ -39,7 +38,7 @@ class ModuleProvider(size: Int, val slot: EntityEquipmentSlot): IModuleProvider 
 		return !stack.isEmpty &&
 				stack.hasCapability(MODULE, null) &&
 				stack.getCapability(MODULE, null)!!.validSlots.contains(slot) &&
-				!inventory.containsItem(stack.item)
+				!hasModule(stack.item)
 	}
 
 	override fun set(i: Int, stack: ItemStack) {

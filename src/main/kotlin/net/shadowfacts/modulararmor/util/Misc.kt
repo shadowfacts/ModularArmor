@@ -20,10 +20,3 @@ fun EntityPlayer.openGui(type: GUI, world: World, x: Int, y: Int, z: Int) {
 fun EntityPlayer.openGui(type: GUI, world: World, pos: BlockPos) {
 	openGui(type, world, pos.x, pos.y, pos.z)
 }
-
-fun IItemHandler.containsItem(item: Item): Boolean {
-	forEach {
-		if (it.item == item) return true
-	}
-	return false
-}

@@ -9,7 +9,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 import net.shadowfacts.modulararmor.ModCapabilities.MODULE_PROVIDER
 import net.shadowfacts.modulararmor.api.IModule
 import net.shadowfacts.modulararmor.api.impl.ModuleBase
-import net.shadowfacts.modulararmor.util.containsItem
 import java.util.*
 
 /**
@@ -32,7 +31,7 @@ class ModuleHighJump: ItemModuleBase("high_jump") {
 			val leggings = player.inventory.armorInventory[1]
 			if (!leggings.isEmpty && leggings.hasCapability(MODULE_PROVIDER, null)) {
 				val provider = leggings.getCapability(MODULE_PROVIDER, null)!!
-				if (provider.inventory.containsItem(this) && provider.hasCapability(ENERGY, null)) {
+				if (provider.hasModule(this) && provider.hasCapability(ENERGY, null)) {
 					val energy = provider.getCapability(ENERGY, null)!!
 					if (energy.extractEnergy(50, true) == 50) {
 						energy.extractEnergy(50, false)

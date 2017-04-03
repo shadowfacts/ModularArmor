@@ -9,7 +9,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent
 import net.shadowfacts.modulararmor.ModCapabilities.MODULE_PROVIDER
 import net.shadowfacts.modulararmor.api.IModule
 import net.shadowfacts.modulararmor.api.impl.ModuleBase
-import net.shadowfacts.modulararmor.util.containsItem
 import java.util.*
 
 /**
@@ -34,7 +33,7 @@ class ModuleLongFall: ItemModuleBase("long_fall") {
 			val boots = player.inventory.armorInventory[0]
 			if (!boots.isEmpty && boots.hasCapability(MODULE_PROVIDER, null)) {
 				val provider = boots.getCapability(MODULE_PROVIDER, null)!!
-				if (provider.inventory.containsItem(this) && provider.hasCapability(ENERGY, null)) {
+				if (provider.hasModule(this) && provider.hasCapability(ENERGY, null)) {
 					val energy = provider.getCapability(ENERGY, null)!!
 					val amount = (event.distance * 25).toInt()
 					val extracted = energy.extractEnergy(amount, true)
