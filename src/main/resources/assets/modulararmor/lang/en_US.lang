@@ -13,3 +13,5 @@ item.modulararmor:armor_plating.name=Armor Plating Module
 item.modulararmor:armor_plating.module=Armor Plating
 item.modulararmor:energized_plating.name=Energized Plating Module
 item.modulararmor:energized_plating.module=Energized Plating
+item.modulararmor:high_jump.name=High Jump Module
+item.modulararmor:high_jump.module=High Jump

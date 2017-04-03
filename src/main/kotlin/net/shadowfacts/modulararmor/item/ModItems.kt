@@ -24,6 +24,7 @@ object ModItems: ModItems() {
 	val wirelessCharger = ModuleWirelessCharger()
 	val armorPlating = ModuleArmorPlating()
 	val energizedPlating = ModuleEnergizedPlating()
+	val highJump = ModuleHighJump()
 
 	override fun init() {
 //		Armors
@@ -38,6 +39,7 @@ object ModItems: ModItems() {
 		register(wirelessCharger)
 		register(armorPlating)
 		register(energizedPlating)
+		register(highJump)
 	}
 
 }
